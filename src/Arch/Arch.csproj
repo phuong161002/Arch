@@ -48,7 +48,7 @@ Removed several methods from arch to slim down the core. </PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DefineConstants>TRACE;</DefineConstants>
+    <DefineConstants>TRACE;PURE_ECS</DefineConstants>
     <Optimize>false</Optimize>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
