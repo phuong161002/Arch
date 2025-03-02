@@ -226,26 +226,26 @@ public partial struct QueryDescription : IEquatable<QueryDescription>
     ///     An <see cref="Signature"/> of all components that an <see cref="Entity"/> should have mandatory.
     /// <remarks>If the content of the array is subsequently changed, a <see cref="Build"/> should be carried out.</remarks>
     /// </summary>
-    public Signature All { get; private set; } = Signature.Null;
+    public Signature All { get; set; } = Signature.Null;
 
     /// <summary>
     ///     An array of all components of which an <see cref="Entity"/> should have at least one.
     /// <remarks>If the content of the array is subsequently changed, a <see cref="Build"/> should be carried out.</remarks>
     /// </summary>
-    public Signature Any { get; private set; } = Signature.Null;
+    public Signature Any { get; set; } = Signature.Null;
 
     /// <summary>
     ///     An array of all components of which an <see cref="Entity"/> should not have any.
     /// <remarks>If the content of the array is subsequently changed, a <see cref="Build"/> should be carried out.</remarks>
     /// </summary>
-    public Signature None { get; private set; } = Signature.Null;
+    public Signature None { get; set; } = Signature.Null;
 
     /// <summary>
     ///     An array of all components that exactly match the structure of an <see cref="Entity"/>.
     ///     <see cref="Entity"/>'s with more or less components than those defined in the array are not addressed.
     /// <remarks>If the content of the array is subsequently changed, a <see cref="Build"/> should be carried out.</remarks>
     /// </summary>
-    public Signature Exclusive { get; private set; } = Signature.Null;
+    public Signature Exclusive { get; set; } = Signature.Null;
 
     /// <summary>
     ///     Initializes a new instance of the <see cref="QueryDescription"/> struct.
